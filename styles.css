@@ -45,11 +45,6 @@ header {
 }
 
 
-
-
-
-
-
 .attribution {
     font-size: 0.6875rem;
     text-align: center;
@@ -57,4 +52,27 @@ header {
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+
+
+
+.site-navigation img {
+    max-width: 4rem;
+}
+
+@media (max-width: 475px) {
+    header {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .site-navigation nav {
+        gap: 1rem;
+        font-size: 0.85rem;
+    }
+
+    .site-navigation img {
+        max-width: 4rem;
+    }
 }

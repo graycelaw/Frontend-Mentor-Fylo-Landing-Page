@@ -120,6 +120,40 @@ button:hover {
     color: hsl(228, 45%, 44%);
 }
 
+@media (max-width: 960px) {
+    .about-fylo {
+        justify-content: center;
+    }
+
+    .about-fylo .fylo-information {
+        max-width: 50rem;
+        width: 100%;
+        order: 2;
+        margin-bottom: 1rem;
+    }
+
+    .illustration-one img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-fylo {
+        justify-content: center;
+    }
+
+    .about-fylo .fylo-information {
+        max-width: 50rem;
+        width: 100%;
+        order: 2;
+        margin-bottom: 1rem;
+    }
+
+    .illustration-one img {
+        width: 100%;
+    }
+}
+
 @media (max-width: 475px) {
     header {
         margin-left: 1.5rem;
@@ -133,5 +167,16 @@ button:hover {
 
     .site-navigation img {
         max-width: 4rem;
+    }
+
+    .form-input #email {
+        width: 100%;
+    }
+
+    .form-input button {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 1rem;
     }
 }

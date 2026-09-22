@@ -10,12 +10,14 @@ body {
 }
 
 /* site navigation */
-header {
+header,
+main {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
 
-.site-navigation {
+.site-navigation,
+.about-fylo {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -38,11 +40,75 @@ header {
     color: #585989;
     font-size: 0.9rem;
     padding: 0.5rem;
+    font-family: 'Raleway';
 }
 
 .site-navigation nav a {
     text-decoration: none;
+    font-weight: 500;
 }
+
+
+/* Main get started section */
+
+.about-fylo {
+    justify-content: space-between;
+}
+
+.about-fylo .fylo-information {
+    max-width: 25rem;
+    width: 100%;
+    margin-top: 2rem;
+    font-family: 'Raleway';
+}
+
+.about-fylo .fylo-information h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #070439;
+}
+
+.about-fylo .fylo-information p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #585989;
+}
+
+.illustration-one img {
+    max-width: 30rem;
+}
+
+.illustration-one {
+    margin-top: 2rem;
+}
+
+.form-input {
+    margin-top: 1rem;
+}
+
+.form-input #email {
+    padding: 0.4rem 1rem;
+    text-align: left;
+    color: #585989;
+    border: 1px solid #585989;
+}
+
+.form-input button {
+    padding: 0.46rem 1rem;
+    background-color: #3065f8;
+    color: #fff;
+    border: 1px solid #3065f8;
+    font-size: 0.8rem;
+    margin-left: 0.4rem;
+}
+
+.form-input #email:hover,
+button:hover {
+    cursor: pointer;
+}
+
+
 
 
 .attribution {

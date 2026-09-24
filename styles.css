@@ -12,8 +12,8 @@ body {
 /* site navigation */
 header,
 main {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .site-navigation,
@@ -24,6 +24,8 @@ main {
     align-items: center;
     max-width: 75rem;
     width: 100%;
+    padding: 1rem;
+
 }
 
 .site-navigation img {
@@ -69,13 +71,15 @@ main {
 }
 
 .about-fylo .fylo-information p {
+    line-height: 1.4;
     font-size: 0.8rem;
     font-weight: 500;
     margin-top: 1rem;
     color: #585989;
 }
 
-.illustration-one img {
+.illustration-one img,
+.illustration-two img {
     max-width: 30rem;
 }
 
@@ -108,6 +112,100 @@ button:hover {
     cursor: pointer;
 }
 
+/* Fylo-productivity */
+
+.fylo-productivity {
+    margin-top: 3rem;
+    font-family: 'Raleway';
+}
+
+.fylo-container {
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75rem;
+    width: 100%;
+}
+
+.about-file .about-file h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #070439;
+}
+
+.about-file {
+    max-width: 25rem;
+    width: 100%;
+}
+
+.about-file p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    color: #585989;
+    line-height: 1.5;
+}
+
+.fylo-works {
+    margin-top: 1rem;
+    display: flex;
+}
+
+.fylo-works a {
+    font-size: 0.8rem;
+    font-weight: 550;
+}
+
+.fylo-works img {
+    margin-left: 0.2rem;
+}
+
+.fylo-works a:hover {
+    color: green;
+
+}
+
+.kyle-quotes {
+    margin-top: 1.5rem;
+    background-color: #f6f6fe;
+    padding: 1.5rem;
+    max-width: 20rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow:
+        0 4px 6px -1px hsla(240, 40%, 15%, 0.05),
+        0 10px 15px -3px hsla(240, 40%, 15%, 0.08);
+}
+
+.kyle-info {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.about-kyle {
+    text-align: left;
+    align-self: center;
+}
+
+.about-kyle p {
+    margin-top: 0.3rem;
+    font-size: 0.7rem;
+}
+
+.kyle-info img {
+    max-width: 3rem;
+    border-radius: 50%;
+}
+
+.kyle-info .kyle-burton {
+    color: #070439;
+    font-weight: 650;
+}
+
+
 
 
 
@@ -121,44 +219,39 @@ button:hover {
 }
 
 @media (max-width: 960px) {
-    .about-fylo {
+
+    .about-fylo,
+    .fylo-container {
         justify-content: center;
     }
 
-    .about-fylo .fylo-information {
+    .about-fylo .fylo-information,
+    .fylo-container .about-file {
         max-width: 50rem;
         width: 100%;
         order: 2;
         margin-bottom: 1rem;
     }
 
-    .illustration-one img {
+    .illustration-one img,
+    .illustration-two img {
         width: 100%;
     }
-}
 
-@media (max-width: 768px) {
-    .about-fylo {
-        justify-content: center;
+    /* .illustration-two {
+        margin-top: -2rem;
+    } */
+
+    .fylo-container .about-file {
+        margin-top: 2rem;
     }
 
-    .about-fylo .fylo-information {
-        max-width: 50rem;
-        width: 100%;
-        order: 2;
-        margin-bottom: 1rem;
-    }
-
-    .illustration-one img {
+    .about-file p {
         width: 100%;
     }
 }
 
 @media (max-width: 475px) {
-    header {
-        margin-left: 1.5rem;
-        margin-right: 1.5rem;
-    }
 
     .site-navigation nav {
         gap: 1rem;
@@ -178,5 +271,15 @@ button:hover {
         width: 100%;
         margin-left: 0;
         margin-top: 1rem;
+    }
+
+    .about-file h2 {
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    .fylo-works,
+    .kyle-quotes {
+        justify-self: center;
     }
 }
